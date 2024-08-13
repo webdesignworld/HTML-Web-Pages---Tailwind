@@ -1,0 +1,109 @@
+body {
+        margin: 0;
+        padding: 0;
+        background-color: var(--background-color);
+        font-family: var(--font-framily);
+        color: var(--main-color); 
+      }
+      
+      
+      
+      
+      
+      
+      
+      :root {
+        --primary-text-button-color: #8053ff;
+        --main-color: #23155b;
+        --gray-light-color-body: #817d8e;
+        --white-background-form-color: #f4f4f4;
+        --background-color: #f4f4f4;
+      
+        --font-framily: Martel Sans, Noto Sans Khojki, sans-serif;
+      
+      }
+
+
+
+
+
+
+
+.signup_mail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family:Martel Sans, Noto Sans Khojki, sans-serif;
+        background-color: #f4f4f4;
+      }
+
+
+
+
+.signup_form {
+        display: flex;
+        width: 70%;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      
+      .developer_avatar {
+        width: 50%;
+        background-color: #23155b;
+        object-fit: cover;
+      }
+      
+      form {
+        width: 50%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+      form h1 {
+        margin-bottom: 20px;
+        color: #8053ff;
+        text-align: center;
+      }
+      
+      form input[type="text"],
+      form input[type="password"],
+      form input[type="submit"] {
+        margin-bottom: 15px;
+        padding: 10px;
+        background-color: #23155b;
+        border: none;
+        border-radius: 5px;
+        color: #ffffff;
+      }
+      
+      form input[type="text"]::placeholder,
+      form input[type="password"]::placeholder {
+        color: white;
+      }
+      
+      form input[type="submit"] {
+        background-color: #007BFF;
+        color: #ffffff;
+        
+      }
+      
+      
+      
+      form p {
+        margin-top: 10px;
+        color: #666666;
+        text-align: center;
+      }
+      
+      form a {
+        color: #007BFF;
+        text-decoration: none;
+      }
+      
+    

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary-text-button-color': '#8053ff',
+              'main-color': '#23155b',
+              'gray-light-color-body': '#817d8e',
+              'white-background-form-color': '#f4f4f4',
+              'background-color': '#f4f4f4',
+            },
+            fontFamily: {
+              sans: ['Martel Sans', 'Noto Sans Khojki', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+    
+    <title>Login</title>
+  </head>
+  <body class="m-0 p-0 bg-background-color font-family-sans text-main-color">
+    <main>
+        <div class="login-mail flex justify-center items-center h-screen m-0 font-sans bg-background-color">
+          <div class="signing-page flex w-[70%] bg-white shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-[10px] overflow-hidden ">
+            <img
+              class="designer_avatar w-6/12 bg-main-color object-cover"
+              src="./assetts/coding.png"
+              alt="developer_avatar"
+            />       
+    
+            <form id="loginForm" action="" class="w-6/12 p-5 flex flex-col justify-center">
+              <h1 class="mb-5 text-primary-text-button-color font-bold text-center text-[32px]">Login Now!</h1>
+            
+              <input type="text" id="email" placeholder="Email" class="mb-[15px] p-2.5 border border-solid bg-main-color text-white placeholder-white" />
+              <p class="error" id="emailError" style="display: none;">Email is required!</p>
+            
+              <input type="password" id="password" placeholder="Password" class="mb-[15px] p-2.5 border border-solid bg-main-color text-white placeholder-white" />
+              <p class="error" id="passwordError" style="display: none;">Password is required!</p>
+            
+              <input type="submit" id="submit" value="Sign In" class="bg-[#007BFF] text-white mb-[15px] p-2.5 border-solid" />
+            
+              <p class="mt-2.5 text-center text-[#666666]">New to CodeCLA? <a href="" class="text-[#007BFF] no-underline">Login</a></p>
+            </form>
+            
+
+      </div>
+      </div>
+    
+    </main>
+    <script src="./login.js"></script>
+  </body>
+</html>

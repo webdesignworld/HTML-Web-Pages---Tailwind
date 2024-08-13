@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./signup.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Signup Page</title>
+  </head>
+  <body>
+    <main>
+      <div class="signup_mail">
+        <div class="signup_form">
+          <img
+            class="developer_avatar"
+            src="./assetts/coding.png"
+            alt="developer_avatar"
+          />
+
+
+
+<form id="signupForm"action="">
+            <h1>Join Coders Now!</h1>
+            <input type="text" id="fname" placeholder="First Name" />
+            <p class = "error" id="fnameError"> First Name is required!</p>
+            <input type="text" id="lname" placeholder="Last Name" />
+            <p class = "error" id="lnameError"> Last Name is required!</p>
+
+
+
+            
+            <input type="text" id="email" placeholder="Email" />
+            <p class = "error" id="emailError"> Email is required!</p>
+            <input type="password" id="password" placeholder="Password" />
+            <p class = "error" id="passwordError"> Password is required!</p>
+            <input type="submit" id="submit" value="Sign Up" />
+            <p>
+              Already have an account?
+              <a href="./login.html" target="_blank">Login</a>
+            </p>
+          </form>          
+        </div>
+      </div>
+    </main>
+
+    <script src="./signup.js"></script>
+  </body>
+</html>
