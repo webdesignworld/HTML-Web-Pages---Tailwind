@@ -3,65 +3,80 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./style.css">
+        <!-- <link rel="stylesheet" href="./style.css"> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khojki&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/3121d65a7c.js" crossorigin="anonymous"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary-text-button-color": "#8053ff",
+              "main-color": "#23155b",
+              "gray-light-color-body": "#817d8e",
+              "white-background-form-color": "#f4f4f4",
+              "background-color": "#f4f4f4",
+            },
+            fontFamily: {
+              sans: ["Martel Sans", "Noto Sans Khojki", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
         <title>Landing Page</title>
 </head>
-<body>  
+<body class="m-0 p-0 bg-background-color font-family-sans text-main-color">  
 
-<div class="container">
-
-
- <nav class="navbar">
-        <div class="codelabs_logo"><img src="./assetts/logo.svg" alt="codelabs_logo"></div>
-  <div class="navigation_coders_managers">
-        <ul class="navlist">
-          <li><a href="./signup.html" target="_blank">For Coders</a></li>
-          <li><a href="./signup.html" target="_blank">For Developers</a></li>  
-          <li class="join_button"><a href="./signup.html" target="_blank"><button>Join Now</button></a></li>
-        </ul>
-       
- </div>
- </nav>
-
-
-
-
- <header class="hero">
-        <h1>The place for Competitive Programmers</h1>
-        <p>CodeCLA is where programmers participate in programming contests, solve algorithm and data structure challenges and become a part of an awsome community.</p>
-        <button class="coder-button">Become a coder</button>
-        <button class="manager-button">Become a manager</button>
-</header>
-
-
+ <div class="container bg-background-color w-auto">
+     <nav class="navbar grid gap-5 px-3 py-6">
+         <div class="codelabs_logo text-center px-12">
+             <img src="./assetts/logo.svg" alt="codelabs_logo">
+         </div>
+         <div class="navigation_coders_managers">
+             <ul class="navlist flex justify-around list-none">
+                 <li><a class="no-underline text-[main-color]" href="./signup.html" target="_blank">For Coders</a></li>
+                 <li><a class="no-underline text-[main-color]" href="./signup.html" target="_blank">For Developers</a></li>
+                 <li class="join_button">
+                     <a href="./signup.html" target="_blank">
+                         <button class="bg-primary-text-button-color text-white px-5 py-2.5 rounded-md border-none">Join Now</button>
+                     </a>
+                 </li>
+             </ul>
+         </div>
+         <header class="hero text-center py-[50px] px-[20px] bg-background-color">
+            <h1 class="text-[2.5em] mb-[20px] text-[#333] font-bold">The place for Competitive Programmers</h1>
+            <p class="text-[1.2em] mb-[30px] text-[#666]">CodeCLA is where programmers participate in programming contests, solve algorithm and data structure challenges, and become a part of an awesome community.</p>
+            <button class="coder-button bg-primary-text-button-color text-white border-none py-[15px] px-[30px] m-[5px]  rounded-[5px] text-[1em]">Become a coder</button>
+            <button class="manager-button bg-[#dbd3d3] text-white border-[#8053ff] py-[15px] px-[30px] m-[5px] rounded-[5px] text-[1em]">Become a manager</button>
+        </header>    
 <main>
 
 
 
 
 
-<section class="statistics">
-        <h2>Practice to level-up</h2>
-        <div class="statistics-container">
-            <div class="stat-box">
-                <p>1K</p>
-                <p>Problems for practice</p>
+    <section class="statistics text-center px-5 py-[50px]">
+        <h2 class="text-[2.5em] font-bold text-[color:var(--primary-text-button-color)] mb-10">Practice to level-up</h2>
+        <div class="statistics-container flex flex-wrap justify-center gap-5">
+            <div class="stat-box bg-white border w-[500px] text-center shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-[5px] rounded-[10px] border-solid border-[#ddd]">
+                <p class="text-[1.2em] text-[#555] mx-0 my-2.5">1K</p>
+                <p class="text-[1.2em] text-[#555] mx-0 my-2.5">Problems for practice</p>
             </div>
-            <div class="stat-box">
-                <p>100+</p>
-                <p>Coders</p>
+            <div class="stat-box bg-white border w-[200px] text-center shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd]">
+                <p class="text-[1.2em] text-[#555] mx-0 my-2.5">100+</p>
+                <p class="text-[1.2em] text-[#555] mx-0 my-2.5">Coders</p>
             </div>
-            <div class="stat-box">
-                <p>10</p>
-                <p>Programming languages</p>
+            <div class="stat-box bg-white border w-[200px] text-center shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd]">
+                <p class="text-[1.2em] text-[#555] mx-0 my-2.5">10</p>
+                <p class="text-[1.2em] text-[#555] mx-0 my-2.5">Programming languages</p>
             </div>
-            <div class="stat-box">
-                <p>130K</p>
-                <p>Submissions</p>
+            <div class="stat-box bg-white border w-[200px] text-center shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd]">
+                <p class="text-[1.2em] text-[#555] mx-0 my-2.5">130K</p>
+                <p class="text-[1.2em] text-[#555] mx-0 my-2.5">Submissions</p>
             </div>
         </div>
     </section>
@@ -71,146 +86,89 @@
 
 
 
+<div class="for_coders">
+    <h2 class="text-primary-text-button-color mb-5">For coders</h2>
+    <h1 class="text-[2.5em] font-[bold] text-[#333] mb-5">What you will <span>gain</span></h1>
+    <p class="text-[#666] text-[1em] m-0 p-2.5">You are a coder who wants to level up his skills in coding and problem solving? Here is what we provide</p>
+</div>  
 
-
-<section class="coder_features">
-
-  <div class="for_coders">
-        <h2>For coders</h2>
-        <h1>What you will <span>gain</span></h1>
-        <p> You are a coder who wants to level up his skills in coding and problem solving? Here is what we provide</p>
-</div>
-
-
- <div class="gain">
-
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd]">  
+            <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
+            <p>Craft tailored coding challenges suited to your specific needs and objectives</p>
+        </div>
     
- 
-
-
-
-
-
-
-        <div class="stat-box2">            
-            <p class="features">Rich practice set of problems</p>
-            <p> <img src="./assetts/ok.svg" alt="green_tick">Access a rich library of practice problems, algorithms, and data structures to enhance your skills</p>
+        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd]">  
+            <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
+            <p>Design challenges that align perfectly with your recruitment criteria</p>
         </div>
-<div class="stat-box2">            
-            <p class="features">Constant feedback</p>
-             <p> <img src="./assetts/ok.svg" alt="green_tick">  Receive personalized insights and feedback to improve your problem-solving abilities</p>
+    
+        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd]">  
+            <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
+            <p>Choose from a wide range of problem types including algorithms, data structures, puzzles, and more</p>
         </div>
-        <div class="stat-box2">           
-            <p class="features">Universal contests</p>
-            <p>  <img src="./assetts/ok.svg" alt="green_tick">   Compete in regularly scheduled contests against top talent from around the globe</p>
-        </div>   
-        
-        <div class="stat-box2">            
-            <p class="features">Sharing is caring</p>
-            <p> <img src="./assetts/ok.svg" alt="green_tick">Connect with like-minded individuals, form teams, and tackle challenges together</p>
-        </div>    
-            
-        <div class="stat-box2">           
-            <p>  <img src="./assetts/ok.svg" alt="green_tick">  Track your progress and climb the ranks on our leaderboard</p>
+    
+        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd]">  
+            <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
+            <p>Ergonomic tools for challenges design</p>
         </div>
-
-        <div class="stat-box2">            
-            <p> <img src="./assetts/ok.svg" alt="green_tick">  Detailed solutions for problems</p>
+    
+        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd]">  
+            <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
+            <p>Collaborate with colleagues or peers in creating and refining coding challenges</p>
         </div>
-</div>
-        <button>Join coders community</button>
-       
-    </section>
-
-
-
-
-
-
-
-<section class="managers_features">
-     
- <div class="for_managers">
-
-            
-<h2><span>For managers</span></h2>
-
-<h1>What you will gain</h1>
-
-<h2>Access <span>high-professional</span> platform for coding challeges design</h2>
-
-</div>
-
-
-
-<div class="access"> 
-
-
-
-  
-
-
-
-
-
-   
-        <div class="stat-box2">   
-<img src="./assetts/ok.svg" alt="green_tick">
-<p>Craft tailed coding challenges suited to your specific needs and objectives</p>
+    
+        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd]">  
+            <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
+            <p>Access dedicated support from our team of experts</p>
         </div>
+        <button class="manager-button bg-[#dbd3d3] text-white text-[1em] m-[5px] px-[30px] py-[15px] rounded-[5px] border-[primary-text-button-color];">Join managers community</button>
+    </div>
+    <h2><span class="text-primary-text-button-color mb-5">For managers</span></h2>
 
+    <h1 >What you will gain</h1>
+    
+    <h2>Access <span>high-professional</span> platform for coding challeges design</h2>
+    
+    </div>
+    
+    
+    
+    <div class="access flex flex-wrap justify-evenly gap-5"> 
 
-        <div class="stat-box2">
-<img src="./assetts/ok.svg" alt="green_tick">
-<p>Design challenges that align perfectly with your recruitment criteria</p>
-
-</div>
-
-
-<div class="stat-box2">
-<img src="./assetts/ok.svg" alt="green_tick">
-<p>Choose from a wide range of problem types including algorithms, data structures, puzzles, and more</p>
-</div>
-
-<div class="stat-box2">
-
-<img src="./assetts/ok.svg" alt="green_tick">
-<p>Ergonomic tools for challenges design</p>
-
-</div>
-
-
-<div class="stat-box2">
-
-<img src="./assetts/ok.svg" alt="green_tick">
-<p>Collaborate with colleagues or peers in creating and refining coding challenges</p>
-
-</div>
-
-<div class="stat-box2">
-
-<img src="./assetts/ok.svg" alt="green_tick">
-<p>Access dedicated support from our team of experts</p>
-</div>
-
-</div>
-<button class="manager-button">Join managers community</button>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd]">  
+            <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
+            <p>Craft tailored coding challenges suited to your specific needs and objectives</p>
+        </div>
+    
+        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd]">  
+            <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
+            <p>Design challenges that align perfectly with your recruitment criteria</p>
+        </div>
+    
+        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd]">  
+            <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
+            <p>Choose from a wide range of problem types including algorithms, data structures, puzzles, and more</p>
+        </div>
+    
+        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd]">  
+            <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
+            <p>Ergonomic tools for challenges design</p>
+        </div>
+    
+        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd]">  
+            <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
+            <p>Collaborate with colleagues or peers in creating and refining coding challenges</p>
+        </div>
+    
+        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd]">  
+            <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
+            <p>Access dedicated support from our team of experts</p>
+        </div>
+        <button class="manager-button bg-[#dbd3d3] text-white text-[1em] m-[5px] px-[30px] py-[15px] rounded-[5px] border-[primary-text-button-color];">Join managers community</button>
+    </div>
+    
 
 
 <div class="showcase-container">
@@ -255,7 +213,7 @@
 
 
 
-<footer>
+<!-- <footer>
 <form action="">
         <h1>Contact us</h1>
         <label for="name">Name</label><br>
@@ -270,7 +228,25 @@
 <br>
 <p class="copyright"> &#169; <span id="year"></span> Your Competitive Programming Platform. All rights reserved.</p>
 
+</footer> -->
+<footer class="bg-main-color text-white px-5 py-[50px] rounded-tl-[120px]">
+    <form action="" class="text-white">
+        <h1 class="text-white">Contact us</h1>
+        <label for="name" class="block text-white mt-2.5">Name</label><br>
+        <input type="text" name="name" id="name" placeholder="Your Name" class="w-[500px] border text-main-color bg-white mt-[5px] p-2.5 rounded-[5px] border-solid border-[#ccc]"><br>
+        <label for="email" class="block text-white mt-2.5">Email</label><br>
+        <input type="text" name="email" id="email" placeholder="Email" class="w-[500px] border text-main-color bg-white mt-[5px] p-2.5 rounded-[5px] border-solid border-[#ccc]"><br>
+        <label for="message" class="block text-white mt-2.5">Message</label><br>
+        <input type="text" name="message" id="message" placeholder="Your Message" class="w-[500px] border text-main-color bg-white mt-[5px] p-2.5 rounded-[5px] border-solid border-[#ccc]"><br>
+        <input type="submit" id="submit" value="Submit" class="bg-primary-text-button-color text-white w-fit cursor-pointer mt-5 border-[none]">
+    </form>
+    <br>
+    <p class="copyright text-white text-[0.9em] text-center mt-5"> &#169; <span id="year" class="text-primary-text-button-color"></span> Your Competitive Programming Platform. All rights reserved.</p>
 </footer>
+
+
+
+
 
 
 
