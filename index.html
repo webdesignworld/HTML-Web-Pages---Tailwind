@@ -3,11 +3,13 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <link rel="stylesheet" href="./style.css"> -->
+   
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khojki&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/3121d65a7c.js" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -60,9 +62,9 @@
 
 
     <section class="statistics text-center px-5 py-[50px]">
-        <h2 class="text-[2.5em] font-bold text-[color:var(--primary-text-button-color)] mb-10">Practice to level-up</h2>
+        <h2 class="text-[2.5em] font-bold text-primary-text-button-color mb-10">Practice to level-up</h2>
         <div class="statistics-container flex flex-wrap justify-center gap-5">
-            <div class="stat-box bg-white border w-[500px] text-center shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-[5px] rounded-[10px] border-solid border-[#ddd]">
+            <div class="stat-box bg-white border w-[200px] text-center shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-[5px] rounded-[10px] border-solid border-[#ddd]">
                 <p class="text-[1.2em] text-[#555] mx-0 my-2.5">1K</p>
                 <p class="text-[1.2em] text-[#555] mx-0 my-2.5">Problems for practice</p>
             </div>
@@ -86,162 +88,288 @@
 
 
 
-<div class="for_coders">
-    <h2 class="text-primary-text-button-color mb-5">For coders</h2>
-    <h1 class="text-[2.5em] font-[bold] text-[#333] mb-5">What you will <span>gain</span></h1>
-    <p class="text-[#666] text-[1em] m-0 p-2.5">You are a coder who wants to level up his skills in coding and problem solving? Here is what we provide</p>
-</div>  
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd]">  
-            <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
-            <p>Craft tailored coding challenges suited to your specific needs and objectives</p>
-        </div>
-    
-        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd]">  
-            <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
-            <p>Design challenges that align perfectly with your recruitment criteria</p>
-        </div>
-    
-        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd]">  
-            <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
-            <p>Choose from a wide range of problem types including algorithms, data structures, puzzles, and more</p>
-        </div>
-    
-        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd]">  
-            <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
-            <p>Ergonomic tools for challenges design</p>
-        </div>
-    
-        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd]">  
-            <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
-            <p>Collaborate with colleagues or peers in creating and refining coding challenges</p>
-        </div>
-    
-        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd]">  
-            <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
-            <p>Access dedicated support from our team of experts</p>
-        </div>
-        <button class="manager-button bg-[#dbd3d3] text-white text-[1em] m-[5px] px-[30px] py-[15px] rounded-[5px] border-[primary-text-button-color];">Join managers community</button>
-    </div>
-    <h2><span class="text-primary-text-button-color mb-5">For managers</span></h2>
 
-    <h1 >What you will gain</h1>
-    
-    <h2>Access <span>high-professional</span> platform for coding challeges design</h2>
-    
+
+<div class="flex justify-items-start w-full">
+  <div class="w-2/3 ml-[50px]">
+    <div class="for_managers">
+      <h2 class="text-xl font-bold my-5 text-primary-text-button-color">For coders</h2>
+      <h2 class="text-[2.5em] font-bold mb-10">What you will <span class="text-primary-text-button-color "> gain</span>
+         </h2>
     </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+     <div class="m-10 grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+      
+        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd] flex items-start">
+         
+            <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
+
+            
+             <p class="features font-bold">Rich practice set of problems</p>  
+            <p>Access a rich library of practice problems, algorithms, and data structures to enhance your skills</p>
+        </div> 
+  
+        
+
+
+
+
     
+        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd] flex items-start">  
+             <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
+          <p class="features font-bold">Universal contests</p>
+            <p>Compete in regularly scheduled contests against top talent from around the globe</p>
+        </div>
+    
+        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd] flex items-start">  
+           <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
+          <p class="features font-bold">Constant feedback</p>
+           
+            <p> Receive personalized insights and feedback to improve your problem-solving abilities</p>
+        </div>
+    
+        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd] flex items-start">  
+          <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
+          <p class="features font-bold">Sharing is caring</p>
+            
+            <p>Connect with like-minded individuals, form teams, and tackle challenges together</p>
+        </div>
+    
+        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd] flex items-start">  
+            <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
+            <p>Track your progress and climb the ranks on our leaderboard</p>
+        </div>
+    
+        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd] flex items-start">  
+            <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
+            <p>Detailed solutions for problems</p>
+        </div>
+        <button class="coder-button bg-primary-text-button-color text-white border-none  py-3 m-[5px] w-80  rounded-[5px] text-[1em]">Join coders community</button>
+    </div>
+
+
+
+    
+    
+
+    <div class="flex justify-items-start w-full">
+        <div class="w-2/3 ml-[50px]">
+          <div class="for_managers">
+            <h2 class="text-xl font-bold my-5 text-primary-text-button-color">For managers</h2>
+            <h2 class="text-[2.5em] font-bold  mb-10">Access <span class="text-primary-text-button-color "> high-professional</span>
+                platform for coding challenge design</h2>
+          </div>
+        </div>
+      </div>
+      
     
     
     <div class="access flex flex-wrap justify-evenly gap-5"> 
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd]">  
+    <div class=" m-10 grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd] flex items-start">  
             <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
             <p>Craft tailored coding challenges suited to your specific needs and objectives</p>
         </div>
     
-        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd]">  
+        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd] flex items-start">  
             <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
             <p>Design challenges that align perfectly with your recruitment criteria</p>
         </div>
     
-        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd]">  
+        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd] flex items-start">  
             <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
             <p>Choose from a wide range of problem types including algorithms, data structures, puzzles, and more</p>
         </div>
     
-        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd]">  
+        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd] flex items-start">  
             <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
             <p>Ergonomic tools for challenges design</p>
         </div>
     
-        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd]">  
+        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd] flex items-start">  
             <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
             <p>Collaborate with colleagues or peers in creating and refining coding challenges</p>
         </div>
     
-        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd]">  
+        <div class="stat-box2 feature-box bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd] flex items-start">  
             <img src="./assetts/ok.svg" alt="green_tick" class="w-5 h-5 mr-2.5 inline"> 
             <p>Access dedicated support from our team of experts</p>
         </div>
-        <button class="manager-button bg-[#dbd3d3] text-white text-[1em] m-[5px] px-[30px] py-[15px] rounded-[5px] border-[primary-text-button-color];">Join managers community</button>
+        <button class="coder-button bg-primary-text-button-color text-white border-none  py-3 m-[5px] w-80  rounded-[5px] text-[1em]">Join managers community</button>
     </div>
     
 
 
-<div class="showcase-container">
-<section class="showcase">
-    <div class="column1">
-        <img class="teams" src="./assetts/team.svg" alt="team_photo">
-        </div>
-        <div class="column2">
-<img class="codelabs_logo" src="./assetts/logo.svg" alt="codelabs_logo">
-<h2>Brought to you by CLA</h2>
-<p>Join the Ultimate Hub for Competitive Programmers and reach growth and excellence in competitive programming. <br>Coding challenges is made simple by our platform.Access a dashboard of tools for high-quality challenge design.</p></div>
-</section>
-</div>
-
-
-
-
-
-
-
-
-
-<h2 style="text-align: center;"><span>Testimonials</span></h2>
-<div class="testimonials-container">
-
-
-<section class="testimonials">
-    <div class="testimonial-carousel">
+    <div class="flex justify-center items-start">
+        <section class="flex items-start gap-5 mb-30">
+          <div class="flex flex-col m-2.5 flex-1">
+            <img class="w-[295px] h-[415px] rounded-tr-[120px] rounded-br-[120px]" src="./assetts/team.svg" alt="team_photo">
+          </div>
+          <div class="flex flex-col m-2.5 flex-[2]">
+            <img class="text-center pl-[50px] size-24" src="./assetts/logo.svg" alt="codelabs_logo">
+            <h2 class="font-extrabold mb-2.5">Brought to you by CLA</h2>
+            <p>Join the Ultimate Hub for Competitive Programmers and reach growth <br>
+              and excellence in competitive programming.<br> Coding challenges is made simple by our platform. Access a dashboard of tools for high-quality challenge design.</p>
+          </div>
+        </section>
+      </div>
       
+
+
+
+
+
+
+     <div class="w-1/2 bg-white border shadow-[0_2px_5px_rgba(0,0,0,0.1)] p-5 rounded-[10px] border-solid border-[#ddd]">
+
+      <div class="stars-container flex justify-center items-center mb-2.5 mt-5">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
     </div>
-    <button class="prev"><i class="fa-solid fa-chevron-left"></i></button>
-    <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
-</section>
+   
+
+      <div id="controls-carousel" class="relative w-full" data-carousel="static">
+        
+       
+        <div id="carousel-items" class="relative h-56 overflow-hidden rounded-lg md:h-96">
+         
+        </div>
+       
+        <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+                <span class="sr-only">Previous</span><i class="fa-solid fa-chevron-left"></i>
+            </span>
+        </button>
+        <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+                <span class="sr-only">Next</span><i class="fa-solid fa-chevron-right"></i>
+            </span>
+        </button>
+    </div>
+    
+    
+
+
+
+
+  </div>
 
 
 
 
 
-</div>
+
+
+
+
+
+
+
+
+      
 </main>
 
 
 
 
-<!-- <footer>
-<form action="">
-        <h1>Contact us</h1>
-        <label for="name">Name</label><br>
-        <input type="text" name="name" id="name" placeholder="Your Name"> <br>
-        <label for="email">Email</label><br>
-        <input type="text" name="email" id="email" placeholder="Email"><br>
-        <label for="message">Message</label><br>
-        <input type="text" name="message" id="message" placeholder="Your Message"><br>
-        <input type="submit" id="submit" value="Submit">
-       
-</form>
-<br>
-<p class="copyright"> &#169; <span id="year"></span> Your Competitive Programming Platform. All rights reserved.</p>
 
-</footer> -->
-<footer class="bg-main-color text-white px-5 py-[50px] rounded-tl-[120px]">
-    <form action="" class="text-white">
+<footer  
+
+class="bg-main-color text-white px-5 py-[50px] rounded-tl-[120px]">
+
+
+
+
+
+
+
+
+    <!-- <form id="contactForm" 
+    action="" >
+
         <h1 class="text-white">Contact us</h1>
+
+
         <label for="name" class="block text-white mt-2.5">Name</label><br>
-        <input type="text" name="name" id="name" placeholder="Your Name" class="w-[500px] border text-main-color bg-white mt-[5px] p-2.5 rounded-[5px] border-solid border-[#ccc]"><br>
+
+
+
+        <input type="text" 
+        name="name" 
+        id="name"
+         placeholder="Your Name" 
+         class="w-[500px] border text-main-color bg-white mt-[5px] p-2.5 rounded-[5px] border-solid border-[#ccc]"><br>
+         <p class="error" id="fnameError">First Name is required!</p>
+
+
+
         <label for="email" class="block text-white mt-2.5">Email</label><br>
+
+
         <input type="text" name="email" id="email" placeholder="Email" class="w-[500px] border text-main-color bg-white mt-[5px] p-2.5 rounded-[5px] border-solid border-[#ccc]"><br>
         <label for="message" class="block text-white mt-2.5">Message</label><br>
+        <p class="error" id="emailError">Email is required!</p>
+      
+
+
         <input type="text" name="message" id="message" placeholder="Your Message" class="w-[500px] border text-main-color bg-white mt-[5px] p-2.5 rounded-[5px] border-solid border-[#ccc]"><br>
-        <input type="submit" id="submit" value="Submit" class="bg-primary-text-button-color text-white w-fit cursor-pointer mt-5 border-[none]">
-    </form>
+
+          <p class="error" id="emailError">Message is required!</p>
+        <input type="submit" id="submit" value="Submit" class="bg-primary-text-button-color text-white w-fit mt-5 border-[none] p-2">
+    </form> -->
     <br>
-    <p class="copyright text-white text-[0.9em] text-center mt-5"> &#169; <span id="year" class="text-primary-text-button-color"></span> Your Competitive Programming Platform. All rights reserved.</p>
+    <form id="contactForm" action="">
+      <h1 class="text-white">Contact us</h1>
+  
+      <label for="name" class="block text-white mt-2.5">Name</label><br>
+      <input type="text" name="name" id="name" placeholder="Your Name" class="w-[500px] border text-main-color bg-white mt-[5px] p-2.5 rounded-[5px] border-solid border-[#ccc]"><br>
+      <p class="error text-red-500" id="nameError" style="display:none;">Name is required!</p>
+  
+      <label for="email" class="block text-white mt-2.5">Email</label><br>
+      <input type="text" name="email" id="email" placeholder="Email" class="w-[500px] border text-main-color bg-white mt-[5px] p-2.5 rounded-[5px] border-solid border-[#ccc]"><br>
+      <p class="error text-red-500" id="emailError" style="display:none;">Email is required!</p>
+  
+      <label for="message" class="block text-white mt-2.5">Message</label><br>
+      <input type="text" name="message" id="message" placeholder="Your Message" class="w-[500px] border text-main-color bg-white mt-[5px] p-2.5 rounded-[5px] border-solid border-[#ccc]"><br>
+      <p class="error text-red-500" id="messageError" style="display:none;">Message is required!</p>
+  
+      <input type="submit" id="submit" value="Submit" class="bg-primary-text-button-color text-white w-fit mt-5 border-[none] p-2">
+  </form>
+  
+
+
+
+
+
+
+
+
+
+    <p class="copyright text-white text-[0.9em] text-center mt-5"> &#169; <span id="year" class=" text-white text-primary-text-button-color"></span> Your Competitive Programming Platform. All rights reserved.</p>
 </footer>
 
 
@@ -255,5 +383,7 @@
 </div> 
 
 <script src="./script.js"></script>
+<script src="./form.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
 </body>
 </html>
